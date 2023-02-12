@@ -21,9 +21,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
 
         self.window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = ViewController()
+        window?.rootViewController = UINavigationController(rootViewController: ViewController())
         window?.makeKeyAndVisible()
 
+        // 1. First, configure WishList with your api-key.
         WishList.configure(with: "uun1qu3-4p1-k3y")
     }
 }

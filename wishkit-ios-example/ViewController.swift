@@ -6,6 +6,8 @@
 //
 
 import UIKit
+
+// 2. Import WishKit
 import WishKit
 
 class ViewController: UIViewController {
@@ -33,7 +35,9 @@ class ViewController: UIViewController {
     }
 
     @objc func showWishList() {
-        present(WishList.viewController, animated: true)
+
+        // 3. Present the WishList ViewController.
+        navigationController?.pushViewController(WishList.viewController, animated: true)
     }
 }
 
