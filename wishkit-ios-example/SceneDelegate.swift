@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
 
         // 1. First, configure WishList with your api-key.
-        WishList.configure(with: "uun1qu3-4p1-k3y")
+        WishList.configure(with: "6629D327-970D-4AD7-A394-872EDEA6C567")
     }
 }
 
