@@ -3,6 +3,7 @@
 //  wishkit-ios-example
 //
 //  Created by Martin Lasek on 2/9/23.
+//  Copyright © 2023 Martin Lasek. All rights reserved.
 //
 
 import UIKit
@@ -28,7 +29,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 

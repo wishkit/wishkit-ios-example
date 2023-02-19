@@ -3,6 +3,7 @@
 //  wishkit-ios-example
 //
 //  Created by Martin Lasek on 2/9/23.
+//  Copyright © 2023 Martin Lasek. All rights reserved.
 //
 
 import UIKit
@@ -20,12 +21,41 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
 
-        self.window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = UINavigationController(rootViewController: ViewController())
-        window?.makeKeyAndVisible()
-
         // 1. First, configure WishList with your api-key.
-        WishList.configure(with: "6629D327-970D-4AD7-A394-872EDEA6C567")
+        WishKit.configure(with: "0269EE13-3390-4003-9AEA-A69ADACFAE7C")
+
+        // Call one of the example functions to see different ways of presenting the wishlist.
+        setupSimpleExample(windowScene: windowScene)
+    }
+
+    /// Example that uses `present` to show the wishlist.
+    private func setupSimpleExample(windowScene: UIWindowScene) {
+        self.window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = ViewController()
+        window?.makeKeyAndVisible()
+    }
+
+    /// Example that uses `navigationController.push` to show the wishlist.
+    private func setupNavigationExample(windowScene: UIWindowScene) {
+        self.window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = UINavigationController(rootViewController: WishKit.viewController)
+        window?.makeKeyAndVisible()
+    }
+
+    /// Example that uses a `UITabBarcontroller` to show the wishlist.
+    private func setupTabBarExample(windowScene: UIWindowScene) {
+        let tabVC = UITabBarController()
+        let tabAppearance = UITabBarAppearance()
+        tabAppearance.configureWithOpaqueBackground()
+        tabAppearance.backgroundColor = .secondarySystemBackground
+        tabVC.tabBar.standardAppearance = tabAppearance
+        tabVC.tabBar.scrollEdgeAppearance = tabAppearance
+
+        tabVC.viewControllers = [WishKit.viewController]
+
+        self.window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = tabVC
+        window?.makeKeyAndVisible()
     }
 }
 
