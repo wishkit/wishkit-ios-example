@@ -31,14 +31,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     /// Example that uses `present` to show the wishlist.
     private func setupSimpleExample(windowScene: UIWindowScene) {
         self.window = UIWindow(windowScene: windowScene)
+
+        // It just works ✨
         window?.rootViewController = ViewController()
+
         window?.makeKeyAndVisible()
     }
 
     /// Example that uses `navigationController.push` to show the wishlist.
     private func setupNavigationExample(windowScene: UIWindowScene) {
         self.window = UIWindow(windowScene: windowScene)
+
+        // It just works ✨
         window?.rootViewController = UINavigationController(rootViewController: WishKit.viewController)
+
         window?.makeKeyAndVisible()
     }
 
@@ -51,6 +57,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tabVC.tabBar.standardAppearance = tabAppearance
         tabVC.tabBar.scrollEdgeAppearance = tabAppearance
 
+        // It just works ✨
         tabVC.viewControllers = [WishKit.viewController]
 
         self.window = UIWindow(windowScene: windowScene)
