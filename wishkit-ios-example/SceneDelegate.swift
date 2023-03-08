@@ -24,8 +24,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // 1. First, configure WishList with your api-key.
         WishKit.configure(with: "0269EE13-3390-4003-9AEA-A69ADACFAE7C")
 
+        // Enable status badge.
+        WishKit.configuration = Configuration(showStatusBadge: true)
+
         // Call one of the example functions to see different ways of presenting the wishlist.
-        setupSimpleExample(windowScene: windowScene)
+        setupNavigationExample(windowScene: windowScene)
     }
 
     /// Example that uses `present` to show the wishlist.
