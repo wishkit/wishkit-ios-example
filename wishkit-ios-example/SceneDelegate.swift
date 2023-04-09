@@ -24,11 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // 1. First, configure WishList with your api-key.
         WishKit.configure(with: "0269EE13-3390-4003-9AEA-A69ADACFAE7C")
 
-        // Enable status badge.
-        WishKit.configuration = Configuration(showStatusBadge: true)
-
         // Call one of the example functions to see different ways of presenting the wishlist.
-        setupNavigationExample(windowScene: windowScene)
+        setupTabBarExample(windowScene: windowScene)
     }
 
     /// Example that uses `present` to show the wishlist.
@@ -58,7 +55,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tabAppearance.configureWithOpaqueBackground()
         tabAppearance.backgroundColor = .secondarySystemBackground
         tabVC.tabBar.standardAppearance = tabAppearance
-        tabVC.tabBar.scrollEdgeAppearance = tabAppearance
+
+        if #available(iOS 15, *) {
+            tabVC.tabBar.scrollEdgeAppearance = tabAppearance
+        }
 
         // It just works ✨
         tabVC.viewControllers = [WishKit.viewController]
