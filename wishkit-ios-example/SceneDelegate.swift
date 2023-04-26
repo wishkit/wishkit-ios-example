@@ -8,28 +8,31 @@
 
 import UIKit
 import WishKit
+import SwiftUI
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    private var scene: UIScene?
+
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
-        guard
-            let windowScene = (scene as? UIWindowScene)
-        else {
-            return
-        }
+        self.scene = scene
 
         // 1. First, configure WishList with your api-key.
         WishKit.configure(with: "0269EE13-3390-4003-9AEA-A69ADACFAE7C")
 
         // Call one of the example functions to see different ways of presenting the wishlist.
-        setupTabBarExample(windowScene: windowScene)
+        setupTabBarExample()
     }
 
     /// Example that uses `present` to show the wishlist.
-    private func setupSimpleExample(windowScene: UIWindowScene) {
+    private func setupSimpleExample() {
+        guard let windowScene = (scene as? UIWindowScene) else {
+            return
+        }
+
         self.window = UIWindow(windowScene: windowScene)
 
         // It just works ✨
@@ -39,7 +42,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     /// Example that uses `navigationController.push` to show the wishlist.
-    private func setupNavigationExample(windowScene: UIWindowScene) {
+    private func setupNavigationExample() {
+        guard let windowScene = (scene as? UIWindowScene) else {
+            return
+        }
+
         self.window = UIWindow(windowScene: windowScene)
 
         // It just works ✨
@@ -49,7 +56,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     /// Example that uses a `UITabBarcontroller` to show the wishlist.
-    private func setupTabBarExample(windowScene: UIWindowScene) {
+    private func setupTabBarExample() {
         let tabVC = UITabBarController()
         let tabAppearance = UITabBarAppearance()
         tabAppearance.configureWithOpaqueBackground()
@@ -63,6 +70,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // It just works ✨
         tabVC.viewControllers = [WishKit.viewController]
 
+        guard let windowScene = (scene as? UIWindowScene) else {
+            return
+        }
         self.window = UIWindow(windowScene: windowScene)
         window?.rootViewController = tabVC
         window?.makeKeyAndVisible()
