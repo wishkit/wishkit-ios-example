@@ -23,8 +23,25 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // 1. First, configure WishList with your api-key.
         WishKit.configure(with: "0269EE13-3390-4003-9AEA-A69ADACFAE7C")
 
+        // Show the status badge of a wish
+        WishKit.config.statusBadge = .show
+
+        // Hide the segmented control (Requested/Implemented)
+        WishKit.config.buttons.segmentedControl.display = .hide
+
+        // Set the secondary color (this is for the cells and text fields).
+        WishKit.theme.secondaryColor = Theme.Scheme(light: .yellow.opacity(1/3), dark: .white.opacity(1/3))
+
+        // Set the tertiary color (this is for the background).
+        WishKit.theme.tertiaryColor = Theme.Scheme(light: .purple, dark: .blue)
+
+        // Change any text used by wishkit (assign localized strings to support different languages).
+        WishKit.config.localization.requested = "New"
+
+        let _ = Bundle.main.appIcon
+        
         // Call one of the example functions to see different ways of presenting the wishlist.
-        setupTabBarExample()
+        setupSimpleExample()
     }
 
     /// Example that uses `present` to show the wishlist.
