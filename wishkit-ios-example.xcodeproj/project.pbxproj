@@ -13,6 +13,7 @@
 		091210CA299617C400C5577E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091210C9299617C400C5577E /* Assets.xcassets */; };
 		091210CD299617C400C5577E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091210CB299617C400C5577E /* LaunchScreen.storyboard */; };
 		091210D629961D1100C5577E /* WishKit in Frameworks */ = {isa = PBXBuildFile; productRef = 091210D529961D1100C5577E /* WishKit */; };
+		09C5DECD2A75854200DDF72A /* NavigationExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C5DECC2A75854200DDF72A /* NavigationExampleVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		091210C9299617C400C5577E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		091210CC299617C400C5577E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		091210CE299617C400C5577E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C5DECC2A75854200DDF72A /* NavigationExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExampleVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			children = (
 				091210BF299617C100C5577E /* wishkit-ios-example */,
 				091210BE299617C100C5577E /* Products */,
+				09C5DEC62A747AAF00DDF72A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,8 +65,16 @@
 				091210C9299617C400C5577E /* Assets.xcassets */,
 				091210CB299617C400C5577E /* LaunchScreen.storyboard */,
 				091210CE299617C400C5577E /* Info.plist */,
+				09C5DECC2A75854200DDF72A /* NavigationExampleVC.swift */,
 			);
 			path = "wishkit-ios-example";
+			sourceTree = "<group>";
+		};
+		09C5DEC62A747AAF00DDF72A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				091210C5299617C100C5577E /* ViewController.swift in Sources */,
+				09C5DECD2A75854200DDF72A /* NavigationExampleVC.swift in Sources */,
 				091210C1299617C100C5577E /* AppDelegate.swift in Sources */,
 				091210C3299617C100C5577E /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +301,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "WishKit Example";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +330,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "WishKit Example";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

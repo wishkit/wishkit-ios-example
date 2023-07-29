@@ -25,23 +25,26 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Show the status badge of a wish
         WishKit.config.statusBadge = .show
+        
+        // Change the "+" character color on the add button.
+        WishKit.config.buttons.addButton.textColor = .init(light: .white, dark: .white)
 
-        // Hide the segmented control (Requested/Implemented)
-        WishKit.config.buttons.segmentedControl.display = .hide
+        // Change the padding beneath the add button.
+        WishKit.config.buttons.addButton.bottomPadding = .large
 
-        // Set the secondary color (this is for the cells and text fields).
-        WishKit.theme.secondaryColor = Theme.Scheme(light: .yellow.opacity(1/3), dark: .white.opacity(1/3))
+        WishKit.theme.primaryColor = .black
 
-        // Set the tertiary color (this is for the background).
-        WishKit.theme.tertiaryColor = Theme.Scheme(light: .purple, dark: .blue)
+        // Segmented Control
+        WishKit.config.buttons.segmentedControl.defaultTextColor = Theme.Scheme(light: .white, dark: .white)
 
-        // Change any text used by wishkit (assign localized strings to support different languages).
-        WishKit.config.localization.requested = "New"
+        WishKit.config.buttons.segmentedControl.activeTextColor = Theme.Scheme(light: .white, dark: .white)
+
+        WishKit.config.buttons.saveButton.textColor = .init(light: .white, dark: .white)
 
         let _ = Bundle.main.appIcon
         
         // Call one of the example functions to see different ways of presenting the wishlist.
-        setupSimpleExample()
+        setupNavigationExample()
     }
 
     /// Example that uses `present` to show the wishlist.
@@ -67,7 +70,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = UIWindow(windowScene: windowScene)
 
         // It just works ✨
-        window?.rootViewController = UINavigationController(rootViewController: WishKit.viewController)
+        window?.rootViewController = UINavigationController(rootViewController: NavigationExampleVC())
 
         window?.makeKeyAndVisible()
     }
