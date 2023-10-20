@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/wishkit/wishkit-ios.git",
       "state" : {
-        "revision" : "34ce8b31d224636a363d57538c990470ee42f4b6",
-        "version" : "3.3.1"
+        "revision" : "4d6b475e8af6c7a40f951ab63f448d2f075d3e78",
+        "version" : "4.0.3"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/wishkit/wishkit-ios-shared.git",
       "state" : {
-        "revision" : "9677991c12016d1d243b3e4697cccf8a7ec52b80",
-        "version" : "1.2.0"
+        "revision" : "118c9c482e4ad57c65d664283516425b98616483",
+        "version" : "1.4.3"
       }
     }
   ],

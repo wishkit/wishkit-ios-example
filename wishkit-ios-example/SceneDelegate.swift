@@ -22,28 +22,12 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // 1. First, configure WishList with your api-key.
         WishKit.configure(with: "0269EE13-3390-4003-9AEA-A69ADACFAE7C")
+        WishKit.config.expandDescriptionInList = true
 
-        // Show the status badge of a wish
-        WishKit.config.statusBadge = .show
-        
-        // Change the "+" character color on the add button.
-        WishKit.config.buttons.addButton.textColor = .init(light: .white, dark: .white)
-
-        // Change the padding beneath the add button.
-        WishKit.config.buttons.addButton.bottomPadding = .large
-
-        WishKit.theme.primaryColor = .black
-
-        // Segmented Control
-        WishKit.config.buttons.segmentedControl.defaultTextColor = Theme.Scheme(light: .white, dark: .white)
-
-        WishKit.config.buttons.segmentedControl.activeTextColor = Theme.Scheme(light: .white, dark: .white)
-
-        WishKit.config.buttons.saveButton.textColor = .init(light: .white, dark: .white)
-
-        let _ = Bundle.main.appIcon
-        
         // Call one of the example functions to see different ways of presenting the wishlist.
+
+        // setupSimpleExample()
+        // setupTabBarExample()
         setupNavigationExample()
     }
 
@@ -88,7 +72,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
 
         // It just works ✨
-        tabVC.viewControllers = [WishKit.viewController]
+        tabVC.viewControllers = [WishKit.viewController.withNavigation()]
 
         guard let windowScene = (scene as? UIWindowScene) else {
             return

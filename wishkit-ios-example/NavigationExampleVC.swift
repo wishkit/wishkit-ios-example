@@ -37,20 +37,8 @@ class NavigationExampleVC: UIViewController {
     }
 
     @objc func showWishList() {
-
-        let vc = WishKit.viewController
-
-        let app = UINavigationBarAppearance()
-        app.backgroundColor = .black
-
-        app.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-
-        vc.navigationController?.navigationBar.isTranslucent = true
-        vc.navigationController?.navigationBar.standardAppearance = app
-        vc.navigationController?.navigationBar.scrollEdgeAppearance = app
-
         // 3. Present the WishKit view controller.
-        navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(WishKit.viewController, animated: true)
     }
 }
 

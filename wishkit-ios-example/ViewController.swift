@@ -7,8 +7,6 @@
 //
 
 import UIKit
-
-// 2. Import WishKit
 import WishKit
 
 class ViewController: UIViewController {
@@ -37,9 +35,12 @@ class ViewController: UIViewController {
     }
 
     @objc func showWishList() {
-
-        // 3. Present the WishKit view controller.
-        present(WishKit.viewController, animated: true)
+        UIBarButtonItem.appearance().tintColor = .red
+        UINavigationBar.appearance().barTintColor = .green  // solid color
+        UIBarButtonItem.appearance().tintColor = .magenta
+        UIToolbar.appearance().barTintColor = .yellow
+        UIToolbar.appearance().tintColor = .brown
+        present(WishKit.viewController.withNavigation(), animated: true)
     }
 }
 
