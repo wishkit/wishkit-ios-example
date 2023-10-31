@@ -14,8 +14,28 @@
 		091210CD299617C400C5577E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091210CB299617C400C5577E /* LaunchScreen.storyboard */; };
 		091210D629961D1100C5577E /* WishKit in Frameworks */ = {isa = PBXBuildFile; productRef = 091210D529961D1100C5577E /* WishKit */; };
 		091398452AF1A6AC00AA46EA /* SheetExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091398442AF1A6AC00AA46EA /* SheetExampleView.swift */; };
+		0930AD262AF1AE680004761E /* wishkit_ios_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930AD252AF1AE680004761E /* wishkit_ios_exampleTests.swift */; };
+		0930AD332AF1AE800004761E /* wishkit_ios_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930AD322AF1AE800004761E /* wishkit_ios_exampleUITests.swift */; };
+		0930AD352AF1AE800004761E /* wishkit_ios_exampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930AD342AF1AE800004761E /* wishkit_ios_exampleUITestsLaunchTests.swift */; };
 		09C5DECD2A75854200DDF72A /* NavigationExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C5DECC2A75854200DDF72A /* NavigationExampleVC.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0930AD272AF1AE680004761E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 091210B5299617C100C5577E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 091210BC299617C100C5577E;
+			remoteInfo = "wishkit-ios-example";
+		};
+		0930AD362AF1AE800004761E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 091210B5299617C100C5577E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 091210BC299617C100C5577E;
+			remoteInfo = "wishkit-ios-example";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		091210BD299617C100C5577E /* wishkit-ios-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wishkit-ios-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +46,11 @@
 		091210CC299617C400C5577E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		091210CE299617C400C5577E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		091398442AF1A6AC00AA46EA /* SheetExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetExampleView.swift; sourceTree = "<group>"; };
+		0930AD232AF1AE680004761E /* wishkit-ios-exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wishkit-ios-exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0930AD252AF1AE680004761E /* wishkit_ios_exampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wishkit_ios_exampleTests.swift; sourceTree = "<group>"; };
+		0930AD302AF1AE800004761E /* wishkit-ios-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wishkit-ios-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0930AD322AF1AE800004761E /* wishkit_ios_exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wishkit_ios_exampleUITests.swift; sourceTree = "<group>"; };
+		0930AD342AF1AE800004761E /* wishkit_ios_exampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wishkit_ios_exampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		09C5DECC2A75854200DDF72A /* NavigationExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExampleVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,6 +63,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0930AD202AF1AE680004761E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0930AD2D2AF1AE800004761E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -45,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				091210BF299617C100C5577E /* wishkit-ios-example */,
+				0930AD242AF1AE680004761E /* wishkit-ios-exampleTests */,
+				0930AD312AF1AE800004761E /* wishkit-ios-exampleUITests */,
 				091210BE299617C100C5577E /* Products */,
 				09C5DEC62A747AAF00DDF72A /* Frameworks */,
 			);
@@ -54,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				091210BD299617C100C5577E /* wishkit-ios-example.app */,
+				0930AD232AF1AE680004761E /* wishkit-ios-exampleTests.xctest */,
+				0930AD302AF1AE800004761E /* wishkit-ios-exampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +114,23 @@
 				091398442AF1A6AC00AA46EA /* SheetExampleView.swift */,
 			);
 			path = "wishkit-ios-example";
+			sourceTree = "<group>";
+		};
+		0930AD242AF1AE680004761E /* wishkit-ios-exampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				0930AD252AF1AE680004761E /* wishkit_ios_exampleTests.swift */,
+			);
+			path = "wishkit-ios-exampleTests";
+			sourceTree = "<group>";
+		};
+		0930AD312AF1AE800004761E /* wishkit-ios-exampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0930AD322AF1AE800004761E /* wishkit_ios_exampleUITests.swift */,
+				0930AD342AF1AE800004761E /* wishkit_ios_exampleUITestsLaunchTests.swift */,
+			);
+			path = "wishkit-ios-exampleUITests";
 			sourceTree = "<group>";
 		};
 		09C5DEC62A747AAF00DDF72A /* Frameworks */ = {
@@ -103,6 +163,42 @@
 			productReference = 091210BD299617C100C5577E /* wishkit-ios-example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0930AD222AF1AE680004761E /* wishkit-ios-exampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0930AD292AF1AE680004761E /* Build configuration list for PBXNativeTarget "wishkit-ios-exampleTests" */;
+			buildPhases = (
+				0930AD1F2AF1AE680004761E /* Sources */,
+				0930AD202AF1AE680004761E /* Frameworks */,
+				0930AD212AF1AE680004761E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0930AD282AF1AE680004761E /* PBXTargetDependency */,
+			);
+			name = "wishkit-ios-exampleTests";
+			productName = "wishkit-ios-exampleTests";
+			productReference = 0930AD232AF1AE680004761E /* wishkit-ios-exampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0930AD2F2AF1AE800004761E /* wishkit-ios-exampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0930AD382AF1AE800004761E /* Build configuration list for PBXNativeTarget "wishkit-ios-exampleUITests" */;
+			buildPhases = (
+				0930AD2C2AF1AE800004761E /* Sources */,
+				0930AD2D2AF1AE800004761E /* Frameworks */,
+				0930AD2E2AF1AE800004761E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0930AD372AF1AE800004761E /* PBXTargetDependency */,
+			);
+			name = "wishkit-ios-exampleUITests";
+			productName = "wishkit-ios-exampleUITests";
+			productReference = 0930AD302AF1AE800004761E /* wishkit-ios-exampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,11 +206,19 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					091210BC299617C100C5577E = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					0930AD222AF1AE680004761E = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 091210BC299617C100C5577E;
+					};
+					0930AD2F2AF1AE800004761E = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 091210BC299617C100C5577E;
 					};
 				};
 			};
@@ -135,6 +239,8 @@
 			projectRoot = "";
 			targets = (
 				091210BC299617C100C5577E /* wishkit-ios-example */,
+				0930AD222AF1AE680004761E /* wishkit-ios-exampleTests */,
+				0930AD2F2AF1AE800004761E /* wishkit-ios-exampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -146,6 +252,20 @@
 			files = (
 				091210CD299617C400C5577E /* LaunchScreen.storyboard in Resources */,
 				091210CA299617C400C5577E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0930AD212AF1AE680004761E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0930AD2E2AF1AE800004761E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +284,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0930AD1F2AF1AE680004761E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0930AD262AF1AE680004761E /* wishkit_ios_exampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0930AD2C2AF1AE800004761E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0930AD332AF1AE800004761E /* wishkit_ios_exampleUITests.swift in Sources */,
+				0930AD352AF1AE800004761E /* wishkit_ios_exampleUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0930AD282AF1AE680004761E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 091210BC299617C100C5577E /* wishkit-ios-example */;
+			targetProxy = 0930AD272AF1AE680004761E /* PBXContainerItemProxy */;
+		};
+		0930AD372AF1AE800004761E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 091210BC299617C100C5577E /* wishkit-ios-example */;
+			targetProxy = 0930AD362AF1AE800004761E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		091210CB299617C400C5577E /* LaunchScreen.storyboard */ = {
@@ -350,6 +500,98 @@
 			};
 			name = Release;
 		};
+		0930AD2A2AF1AE680004761E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JLJHFZ4FU8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.martinlasek.wishkit-ios-exampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wishkit-ios-example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wishkit-ios-example";
+			};
+			name = Debug;
+		};
+		0930AD2B2AF1AE680004761E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JLJHFZ4FU8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.martinlasek.wishkit-ios-exampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wishkit-ios-example.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wishkit-ios-example";
+			};
+			name = Release;
+		};
+		0930AD392AF1AE800004761E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JLJHFZ4FU8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.martinlasek.wishkit-ios-exampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "wishkit-ios-example";
+			};
+			name = Debug;
+		};
+		0930AD3A2AF1AE800004761E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JLJHFZ4FU8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.martinlasek.wishkit-ios-exampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "wishkit-ios-example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -367,6 +609,24 @@
 			buildConfigurations = (
 				091210D2299617C400C5577E /* Debug */,
 				091210D3299617C400C5577E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0930AD292AF1AE680004761E /* Build configuration list for PBXNativeTarget "wishkit-ios-exampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0930AD2A2AF1AE680004761E /* Debug */,
+				0930AD2B2AF1AE680004761E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0930AD382AF1AE800004761E /* Build configuration list for PBXNativeTarget "wishkit-ios-exampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0930AD392AF1AE800004761E /* Debug */,
+				0930AD3A2AF1AE800004761E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -28,6 +28,30 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0930AD222AF1AE680004761E"
+               BuildableName = "wishkit-ios-exampleTests.xctest"
+               BlueprintName = "wishkit-ios-exampleTests"
+               ReferencedContainer = "container:wishkit-ios-example.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0930AD2F2AF1AE800004761E"
+               BuildableName = "wishkit-ios-exampleUITests.xctest"
+               BlueprintName = "wishkit-ios-exampleUITests"
+               ReferencedContainer = "container:wishkit-ios-example.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
