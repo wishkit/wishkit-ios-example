@@ -27,7 +27,6 @@
 		091210CE299617C400C5577E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		091398442AF1A6AC00AA46EA /* SheetExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetExampleView.swift; sourceTree = "<group>"; };
 		09C5DECC2A75854200DDF72A /* NavigationExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExampleVC.swift; sourceTree = "<group>"; };
-		09D1BE2A2AF19E0600ACAE36 /* wishkit-ios */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "wishkit-ios"; path = "../wishkit-ios"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +44,6 @@
 		091210B4299617C100C5577E = {
 			isa = PBXGroup;
 			children = (
-				09D1BE2A2AF19E0600ACAE36 /* wishkit-ios */,
 				091210BF299617C100C5577E /* wishkit-ios-example */,
 				091210BE299617C100C5577E /* Products */,
 				09C5DEC62A747AAF00DDF72A /* Frameworks */,
