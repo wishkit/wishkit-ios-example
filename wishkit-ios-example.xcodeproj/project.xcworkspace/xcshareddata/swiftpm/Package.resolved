@@ -1,15 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "wishkit-ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/wishkit/wishkit-ios.git",
-      "state" : {
-        "revision" : "4d6b475e8af6c7a40f951ab63f448d2f075d3e78",
-        "version" : "4.0.3"
-      }
-    },
-    {
       "identity" : "wishkit-ios-shared",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/wishkit/wishkit-ios-shared.git",

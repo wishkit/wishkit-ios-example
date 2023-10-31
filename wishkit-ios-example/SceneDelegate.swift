@@ -22,13 +22,26 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // 1. First, configure WishList with your api-key.
         WishKit.configure(with: "0269EE13-3390-4003-9AEA-A69ADACFAE7C")
-        WishKit.config.expandDescriptionInList = true
+//        WishKit.configure(with: "384A47E8-E5DD-4CF4-A7EE-A1C4F2AD78B8")
+//        WishKit.config.expandDescriptionInList = true
 
         // Call one of the example functions to see different ways of presenting the wishlist.
 
         // setupSimpleExample()
         // setupTabBarExample()
-        setupNavigationExample()
+        // setupSimpleExample()
+        setupSheetExample()
+    }
+
+    /// Example that uses `present` to show the wishlist.
+    private func setupSheetExample() {
+        guard let windowScene = (scene as? UIWindowScene) else {
+            return
+        }
+
+        self.window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = UIHostingController(rootView: SheetExampleView())
+        window?.makeKeyAndVisible()
     }
 
     /// Example that uses `present` to show the wishlist.
